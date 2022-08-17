@@ -17,7 +17,7 @@ URL = "https://github.com/AmineSoukara/Py-EgyBest-Api"
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-VERSION = '1.4'
+VERSION = '1.5'
 
 setup(
     name="Py-EgyBest-Api",
