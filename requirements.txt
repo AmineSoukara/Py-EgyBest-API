@@ -1,4 +1,0 @@
-dotmap
-requests
-aiohttp
-aiofiles
