@@ -3,6 +3,7 @@ Py-EgyBest-Api
 ~~~~~~~~~
 :Copyright: (c) 2022 By Amine Soukara <https://github.com/AmineSoukara>.
 :License: MIT, See LICENSE For More Details.
+:Link: https://github.com/AmineSoukara/Py-EgyBest-Api
 :Description: Asynchronous Python Wrapper For EgyBest-API.
 """
 
