@@ -65,7 +65,7 @@ from asyncio import run
 
 async def main():
     x = RaEye("http://0.1.2.3", access_token="abcd")
-    z = await x.dls(url="https://www.egybest.org/movie/top-five-2014", v=2)
+    z = await x.dls(url="https://www.egybest.org/movie/top-five-2014", version=2)
     print(z)
 
 run(main())
