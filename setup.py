@@ -23,7 +23,7 @@ with open("requirements.txt", "r", encoding="utf-8") as requirements:
     requires = requirements.read().splitlines(keepends=False)
 
 
-VERSION = '1'
+VERSION = '1.1'
 
 setup(
     name="Py-EgyBest-Api",
