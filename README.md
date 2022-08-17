@@ -63,10 +63,20 @@ For Example, To Get Direct Links, You Can Do This
 from EgyBestAPI import RaEye
 from asyncio import run
 
+x = RaEye("http://0.1.2.3", access_token="abcd", id=None, password=None)
+
 async def main():
-    x = RaEye("http://0.1.2.3", access_token="abcd")
     z = await x.dls(url="https://www.egybest.org/movie/top-five-2014", version=2)
+
     print(z)
+    # output: DotMap(a=1, b=2)
+
+    print(z.toDict())
+    # output: {'a': 1, 'b': 2}
+
+    print(z.type)
+    print(z["type"])
+    # output: movie
 
 run(main())
 ```
