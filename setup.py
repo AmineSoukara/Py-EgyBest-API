@@ -13,13 +13,10 @@ EMAIL = "AmineSoukara@gmail.com"
 URL = "https://github.com/AmineSoukara/Py-EgyBest-Api"
 
 
-# Get the long description
-with open("README.md", "r", encoding="utf-8") as readme:
+with open("README.md", encoding="utf-8") as readme, open(
+    "requirements.txt", encoding="utf-8"
+) as requirements:
     long_description = readme.read()
-
-
-# Get requirements
-with open("requirements.txt", "r", encoding="utf-8") as requirements:
     requires = requirements.read().splitlines(keepends=False)
 
 
