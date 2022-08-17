@@ -13,14 +13,11 @@ EMAIL = "AmineSoukara@gmail.com"
 URL = "https://github.com/AmineSoukara/Py-EgyBest-Api"
 
 
-with open("README.md", encoding="utf-8") as readme, open(
-    "requirements.txt", encoding="utf-8"
-) as requirements:
-    long_description = readme.read()
-    requires = requirements.read().splitlines(keepends=False)
+# Get the long description
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-
-VERSION = '1.1'
+VERSION = '1.2'
 
 setup(
     name="Py-EgyBest-Api",
@@ -51,5 +48,5 @@ setup(
         "Topic :: Internet",
     ],
     python_requires=">=3.8",
-    install_requires=requires,
+    install_requires=["aiohttp", "aiofiles", "dotmap", "requests"],
 )
