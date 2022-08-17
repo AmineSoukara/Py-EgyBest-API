@@ -60,7 +60,7 @@ For Example, To Get Direct Links, You Can Do This
 <div align="left">
 
 ```py
-from EgyBest-API import RaEye
+from EgyBestAPI import RaEye
 from asyncio import run
 
 async def main():
@@ -79,7 +79,7 @@ There Is No Documentation, But You Can Take Help From The DocStrings :
 <div align="left">
 
 ```py
-from EgyBest-API import RaEye
+from EgyBestAPI import RaEye
 
 print(help(RaEye.dls))
 ```
