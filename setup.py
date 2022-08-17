@@ -7,6 +7,8 @@ Py-EgyBest-Api
 """
 
 from setuptools import find_packages, setup
+import datetime
+
 
 AUTHOR = "AmineSoukara"
 EMAIL = "AmineSoukara@gmail.com"
@@ -17,7 +19,10 @@ URL = "https://github.com/AmineSoukara/Py-EgyBest-Api"
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-VERSION = '1.7'
+
+today_date = datetime.date.today()
+VERSION = today_date.strftime("%d.%m.%Y")
+# VERSION = '1.7'
 
 setup(
     name="Py-EgyBest-Api",
