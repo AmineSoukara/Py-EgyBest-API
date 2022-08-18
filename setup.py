@@ -22,7 +22,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 
 today_date = datetime.date.today()
-VERSION = today_date.strftime("%d.%m.%Y")
+VERSION = today_date.strftime("%d.%m.%y")
 # VERSION = '1.7'
 
 setup(
