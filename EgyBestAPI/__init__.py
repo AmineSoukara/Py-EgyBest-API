@@ -8,27 +8,37 @@ Py-EgyBest-Api
 """
 
 
-import asyncio
 import re
 from asyncio.exceptions import TimeoutError
+from json.decoder import JSONDecodeError
 
 import requests
 from dotmap import DotMap
-
 from requests.exceptions import ConnectionError
 from urllib3.exceptions import MaxRetryError, NewConnectionError
+
+# from requests.exceptions import JSONDecodeError
 
 
 class InvalidAccessToken(Exception):
     pass
+
+
 class RateLimitExceeded(Exception):
     pass
+
+
 class UserBanned(Exception):
     pass
+
+
 class LoginError(Exception):
     pass
+
+
 class ApiConnectionError(Exception):
     pass
+
 
 class RaEye:
     """
@@ -63,11 +73,17 @@ class RaEye:
                 raise UserBanned("Congrats, Your Are Banned (Forever)")
 
             response = resp.json()
-            x = DotMap(response)
 
-        except TimeoutError:
-            raise Exception("Failed To Communicate With RaEye Server.")
+        except (
+            TimeoutError,
+            ConnectionError,
+            MaxRetryError,
+            NewConnectionError,
+            JSONDecodeError,
+        ):
+            raise ApiConnectionError("Failed To Communicate With RaEye Server.")
 
+        x = DotMap(response)
         if x.success:
             return x.data.access_token
         else:
@@ -97,7 +113,13 @@ class RaEye:
 
             response = resp.json()
 
-        except (TimeoutError, ConnectionError, MaxRetryError, NewConnectionError):
+        except (
+            TimeoutError,
+            ConnectionError,
+            MaxRetryError,
+            NewConnectionError,
+            JSONDecodeError,
+        ):
             raise ApiConnectionError("Failed To Communicate With RaEye Server.")
 
         return DotMap(response)
