@@ -127,6 +127,7 @@ class RaEye:
     async def dls(self, url: str, version: int):
         """
         Returns An Object.
+                Info: إستخراج روابط التحميل و المشاهدة
                 Parameters:
                         url (str): Episode or Movie link
                         version (int): 1,2 Return As list 3,4 As Dict, Default 1 
@@ -139,9 +140,21 @@ class RaEye:
     async def info(self, url: str):
         """
         Returns An Object.
+                Info: إستخراج كافة المعلومات
                 Parameters:
                         url (str): Link (Show - Movie ...)
                 Returns:
                         Result Object (str): Results Which You Can Access With Dot Notation
         """
         return await self.fetch("info", url=url)
+
+    async def table(self, url: str):
+        """
+        Returns An Object.
+                Info: إستخراج المعلومات
+                Parameters:
+                        url (str): Link (Show - Movie ...)
+                Returns:
+                        Result Object (str): Results Which You Can Access With Dot Notation
+        """
+        return await self.fetch("table", url=url)
