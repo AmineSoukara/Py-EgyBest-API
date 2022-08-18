@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/github/license/aminesoukara/Py-EgyBest-Api.svg" alt="license" />
   </a>
   <a href="https://pepy.tech/project/Py-EgyBest-Api">
-    <img src="https://static.pepy.tech/personalized-badge/Py-EgyBest-Api?period=total&units=none&left_color=black&right_color=blue&left_text=Total-Downloads" alt="Total Downloads" />
+    <img src="https://static.pepy.tech/personalized-badge/py-egyBest-api?period=total&units=none&left_color=black&right_color=blue&left_text=Total-Downloads" alt="Total Downloads" />
   </a>
 </p>
 
