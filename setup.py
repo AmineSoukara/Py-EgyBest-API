@@ -54,5 +54,5 @@ setup(
         "Topic :: Internet",
     ],
     python_requires=">=3.8",
-    install_requires=["aiohttp", "aiofiles", "dotmap", "requests"],
+    install_requires=["aiohttp", "aiofiles", "dotmap", "requests", "urllib3"],
 )
