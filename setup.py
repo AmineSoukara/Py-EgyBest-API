@@ -20,9 +20,8 @@ URL = "https://github.com/AmineSoukara/Py-EgyBest-Api"
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-
 today_date = datetime.date.today()
-VERSION = today_date.strftime("%d.%m.%y")
+VERSION = today_date.strftime("%-y.%-m.%-d")
 # VERSION = '1.7'
 
 setup(
