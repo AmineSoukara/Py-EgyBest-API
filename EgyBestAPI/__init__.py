@@ -15,22 +15,20 @@ from asyncio.exceptions import TimeoutError
 import requests
 from dotmap import DotMap
 
+from requests.exceptions import ConnectionError
+from urllib3.exceptions import MaxRetryError, NewConnectionError
+
 
 class InvalidAccessToken(Exception):
     pass
-
-
 class RateLimitExceeded(Exception):
     pass
-
-
 class UserBanned(Exception):
     pass
-
-
 class LoginError(Exception):
     pass
-
+class ApiConnectionError(Exception):
+    pass
 
 class RaEye:
     """
@@ -99,8 +97,8 @@ class RaEye:
 
             response = resp.json()
 
-        except TimeoutError:
-            raise Exception("Failed To Communicate With RaEye Server.")
+        except (TimeoutError, ConnectionError, MaxRetryError, NewConnectionError):
+            raise ApiConnectionError("Failed To Communicate With RaEye Server.")
 
         return DotMap(response)
 
