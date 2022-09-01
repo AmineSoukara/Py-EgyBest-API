@@ -44,6 +44,10 @@
 
 <div align="center">
 
+# ⚠️ Note:
+
+- For Personal Use Only, Don't Create Or Build Something Huge With This API Without Permission Otherwise You Will Be Banned
+
 # 🔐 Requirements:
 
 - Python 3.8 Or Newer.
