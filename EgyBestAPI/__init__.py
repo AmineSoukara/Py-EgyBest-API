@@ -92,7 +92,7 @@ class RaEye:
             raise LoginError(x.message)
 
 
-    async def fetch(self, route, method="GET", timeout=60, **params):
+    async def fetch(self, route, method="GET", timeout=30, **params):
         try:
             headers = {
                 "Accept": "application/json",
@@ -137,6 +137,10 @@ class RaEye:
                 Returns:
                         Result Object (str): Results Which You Can Access With Dot Notation
         """
+
+        if not isinstance(version, int):
+            raise ApiConnectionError(f"Version Arg Must Be A Number Not {type(version)}")
+
         return await self.fetch("dls", url=url, v=version)
 
 
@@ -209,7 +213,7 @@ class RaEye:
         return await self.fetch("note", url=url)
 
 
-    async def check_page(self, url: str):
+    async def is_page_unavailable(self, url: str):
         """
         Returns An Object.
                 Info: عرض الصفحة اذا كانت غير متوفرة
@@ -310,6 +314,10 @@ class RaEye:
                 Returns:
                         Result Object (str): Results Which You Can Access With Dot Notation
         """
+
+        if not isinstance(limit, int):
+            raise ApiConnectionError(f"Limit Arg Must Be A Number Not {type(limit)}")
+
         return await self.fetch("pages", path=path, limit=limit)
 
     async def page(self, path: str, number: int):
@@ -322,6 +330,10 @@ class RaEye:
                 Returns:
                         Result Object (str): Results Which You Can Access With Dot Notation
         """
+
+        if not isinstance(number, int):
+            raise ApiConnectionError(f"Number Arg Must Be A Number Not {type(number)}")
+
         return await self.fetch("page", path=path, number=number)
 
 
