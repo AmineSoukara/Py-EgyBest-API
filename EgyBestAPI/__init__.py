@@ -49,10 +49,11 @@ class RaEye:
     """
 
     def __init__(
-        self, api_url: str, id: int = None, password: str = None, access_token: str = ""
+        self, api_url: str, id: int = None, password: str = None, access_token: str = "", timeout: int = 60
     ):
         self.api_url = self.format_api_url(api_url.strip(" /"))
         self.refresh_token = None
+        self.timeout = timeout
 
         if id and password:
             self.access_token, self.refresh_token = self.get_tokens(id, password)
@@ -91,7 +92,7 @@ class RaEye:
         else:
             raise LoginError(x.message)
 
-    async def fetch(self, route, method="GET", timeout=30, **params):
+    async def fetch(self, route, method="GET", **params):
         try:
             headers = {
                 "Accept": "application/json",
@@ -101,7 +102,7 @@ class RaEye:
 
             url = f"{self.api_url}/{route}"
             resp = requests.request(
-                method, url, headers=headers, timeout=timeout, params=params
+                method, url, headers=headers, timeout=self.timeout, params=params
             )
 
             if resp.status_code in (422, 401):
