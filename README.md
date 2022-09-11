@@ -43,7 +43,7 @@
   </h4>
 </div>
 
-<br />
+##
 
 <div align="center">
 
@@ -51,17 +51,22 @@
 - For Personal Use Only, Don't Create Or Build Something Huge With This API Without Permission Otherwise You Will Be Banned
 - This Project Is Licensed Under The [MIT License](https://github.com/AmineSoukara/Py-EgyBest-Api/blob/main/LICENSE)
 
+##
+
 # 🔐 Requirements:
 
 - Python 3.8 Or Newer.
 - API URL and Access Token From :
 <a href="https://t.me/EgyBestAPIBot"><img src="https://img.shields.io/badge/@EgyBestAPIBot-FFFF00?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
 
+##
+
 # 🗜 Installation:
 
 ```sh
 $ pip3 install Py-EgyBest-Api
 ```
+##
 
 # ❓ Usage:
 For Example, To Get Direct Links, You Can Do This
@@ -100,6 +105,8 @@ run(main())
 
 <div align="center">
 
+##
+
 # 🪐 Documentation:
 There Is No Documentation, But You Can Take Help From The DocStrings :
 
@@ -112,6 +119,8 @@ print(help(RaEye.dls))
 ```
 
 <div align="center">
+
+##
 
 # ⭐️ Features:
 <div align="left">
@@ -128,6 +137,8 @@ print(help(RaEye.dls))
 
 <div align="center">
 
+##
+
 # 🧭 RoadMap:
 <div align="left">
 
@@ -135,13 +146,19 @@ print(help(RaEye.dls))
 
 <div align="center">
 
+##
+
 # 👨‍💻 Dev & Support:
 <a href="https://bio.link/aminesoukara"><img src="https://img.shields.io/badge/@AmineSoukara-000000?style=flat&logo=messenger&logoColor=white?logoWidth=100"></a>
 <a href="https://t.me/EgyBestBotSupport"><img src="https://img.shields.io/badge/Group-FF0000?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
 <a href="https://t.me/EgyBestBotOriginal"><img src="https://img.shields.io/badge/Channel-FF0000?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
 
+##
+
 # 📭 Credits:
 <a href="https://github.com/AmineSoukara/EgyBest-Api"><img src="https://img.shields.io/badge/@EgyBest–API-FE9A2E?style=flat&logo=github&logoColor=black"></a>
+
+##
 
 # 🌍 Contributing:
 
@@ -152,6 +169,6 @@ print(help(RaEye.dls))
 Contributions Are Always Welcome!
 See `contributing.md` For Ways To Get Started.
 
+##
 
 ![⭐️](https://telegra.ph/file/b132a131aabe2106bd335.gif)
-
