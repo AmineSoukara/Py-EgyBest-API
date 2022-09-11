@@ -27,9 +27,11 @@
   <a href="https://pepy.tech/project/Py-EgyBest-Api">
     <img src="https://static.pepy.tech/personalized-badge/py-egyBest-api?period=total&units=none&left_color=grey&right_color=red&left_text=Total-Downloads" alt="Total Downloads" />
   </a>
+  <a href="https://github.com/AmineSoukara/Py-EgyBest-API">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAmineSoukara%2FPy-EgyBest-API&count_bg=%23FF0000&title_bg=%23555555&icon=tinder.svg&icon_color=%23FF0000&title=Hits&edge_flat=false" alt="hits" />
+  </a>
 </p>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAmineSoukara%2FPy-EgyBest-API&count_bg=%23FF0000&title_bg=%23555555&icon=tinder.svg&icon_color=%23FF0000&title=Hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
 <h4>
