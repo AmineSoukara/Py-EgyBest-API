@@ -29,6 +29,9 @@
   </a>
 </p>
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAmineSoukara%2FPy-EgyBest-API&count_bg=%23FF0000&title_bg=%23555555&icon=tinder.svg&icon_color=%23FF0000&title=Hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+
 <h4>
     <a href="https://github.com/AmineSoukara/EgyBest-Api">API Repository</a>
   <span> · </span>
@@ -45,13 +48,14 @@
 <div align="center">
 
 # ⚠️ Note:
-
 - For Personal Use Only, Don't Create Or Build Something Huge With This API Without Permission Otherwise You Will Be Banned
+- This Project Is Licensed Under The [MIT License](https://github.com/AmineSoukara/Py-EgyBest-Api/blob/main/LICENSE)
 
 # 🔐 Requirements:
 
 - Python 3.8 Or Newer.
-- API URL and Access Token, From [@EgyBestAPIBot](https://t.me/EgyBestAPIBot).
+- API URL and Access Token From :
+<a href="https://t.me/EgyBestAPIBot"><img src="https://img.shields.io/badge/@EgyBestAPIBot-FFFF00?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
 
 # 🗜 Installation:
 
@@ -112,29 +116,32 @@ print(help(RaEye.dls))
 # ⭐️ Features:
 <div align="left">
 
-* [x] Todo 1
+* [x] Smart Search
+* [x] Extract Full Info From Url (Movie-Serie/Anime)
+* [x] Extract: Story - Image - Title - Trailer - Actors Info - Note
+* [x] Extract Download and Stream Links With Full Info
+* [x] Extract Similar Movies
+* [x] Extract Seasons / Episodes
+* [x] Extract Previous And Next Episode
+* [x] Extract Movies Or Series From Paths
+* [x] And More ...
 
 <div align="center">
 
 # 🧭 RoadMap:
 <div align="left">
 
-* [ ] Todo 2
+* [ ] Todo
 
 <div align="center">
 
-# 💬 Support:
-<a href="https://t.me/EgyBestBotSupport"><img src="https://img.shields.io/badge/Group-FF0000?style=for-the-badge&logo=telegram&logoColor=white"></a>
-<a href="https://t.me/EgyBestBotOriginal"><img src="https://img.shields.io/badge/Channel-FF0000?style=for-the-badge&logo=telegram&logoColor=white"></a>
-
-# 👨‍💻 Developer:
-<a href="https://bio.link/aminesoukara"><img src="https://img.shields.io/badge/@AmineSoukara-000000?style=for-the-badge&logo=messenger&logoColor=white"></a>
-
-# 📝 License:
-This Project Is Licensed Under The [MIT License](https://github.com/AmineSoukara/Py-EgyBest-Api/blob/main/LICENSE)
+# 👨‍💻 Dev & Support:
+<a href="https://bio.link/aminesoukara"><img src="https://img.shields.io/badge/@AmineSoukara-000000?style=flat&logo=messenger&logoColor=white?logoWidth=100"></a>
+<a href="https://t.me/EgyBestBotSupport"><img src="https://img.shields.io/badge/Group-FF0000?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
+<a href="https://t.me/EgyBestBotOriginal"><img src="https://img.shields.io/badge/Channel-FF0000?style=flat&logo=telegram&logoColor=white?logoWidth=100"></a>
 
 # 📭 Credits:
-<a href="https://github.com/AmineSoukara/EgyBest-Api"><img src="https://img.shields.io/badge/@EgyBest–API-FE9A2E?style=for-the-badge&logo=github&logoColor=black"></a>
+<a href="https://github.com/AmineSoukara/EgyBest-Api"><img src="https://img.shields.io/badge/@EgyBest–API-FE9A2E?style=flat&logo=github&logoColor=black"></a>
 
 # 🌍 Contributing:
 
